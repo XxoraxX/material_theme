@@ -1,0 +1,16 @@
+/* Fallback CSS — hides help items & divider if they render */
+#help-links,
+.documentation-links,
+a.dropdown-item[href*="docs.erpnext.com"],
+a.dropdown-item[href*="discuss.frappe.io"],
+a.dropdown-item[href*="frappe.io/school"],
+a.dropdown-item[href*="github.com/frappe/erpnext/issues"],
+button.dropdown-item[onclick*="show_about"],
+button.dropdown-item[onclick*="show_shortcuts"],
+a.dropdown-item[href*="frappe.io/support"],
+.navbar .dropdown-help,
+.navbar [data-label="Help"],
+.navbar a[title="Help"],
+.navbar [aria-label="Help"] {
+  display: none !important;
+}
