@@ -440,16 +440,19 @@
     border-color: var(--md-sys-color-primary);
     box-shadow: none;
   }
- /* Yellow highlight when field is focused */
-  [data-theme=material] .form-control:focus,
-  [data-theme=material] .control-input:focus,
-  [data-theme=material] .input-with-feedback:focus,
-  [data-theme=material] select:focus,
-  [data-theme=material] textarea:focus {
-    background-color: #fff9c4 !important;   /* soft yellow */
-    border-color: #fbc02d !important;       /* yellow border */
-    box-shadow: 0 0 0 0.15rem rgba(251, 192, 45, 0.35) !important;
+ /* Yellow highlight for ALL users (any theme) */
+  .form-control:focus,
+  .control-input:focus,
+  .input-with-feedback:focus,
+  select:focus,
+  textarea:focus,
+  .frappe-control input:focus,
+  .frappe-control textarea:focus {
+  background-color: #fff9c4 !important;
+  border-color: #fbc02d !important;
+  box-shadow: 0 0 0 0.15rem rgba(251, 192, 45, 0.35) !important;
   }
+
 
   
   [data-theme=material] .control-label {
